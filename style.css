@@ -1,0 +1,202 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #1c1c1c;
+}
+
+/* --- PFP KU + ABOUT ME --- */
+
+.about-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text h1 {
+    margin-bottom: 20px;
+}
+
+.about-img img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3273ff; /* Outline luar */
+    outline: 4px solid #a5c4ff; /* Outline tengah */
+}
+
+
+/* --- NAVBAR --- */
+nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: #3273ff;
+}
+
+/* --- SECTIONS --- */
+section {
+  width: 100%;
+  padding: 100px 15%; /* Jarak antar section */
+}
+
+/* Asymmetrical layout */
+.home {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  gap: 40px;
+}
+
+.home-text h1 {
+  font-size: 48px;
+  color: #3273ff;
+}
+
+.home-text p {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.home img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* PROJECT */
+#PROJECT {
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* GALLERY */
+#GALLERY {
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 250px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+#CONTACTME {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white; /* biar bulatnya rapi */
+    padding: 5px;      /* supaya icon tidak mepet */
+}
+
+.contact-box {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.contact-box a {
+  color: #3273ff;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+text-align: center;
+padding: 30px;
+margin-top: 80px;
+background: #d6dae0; /* Abu-abu lebih netral dan sesuai tema */
+color: #1c1c1c;
+font-size: 14px;
+}
